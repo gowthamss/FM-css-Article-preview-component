@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    background: hsl(210, 46%, 95%);
+    padding: 80px 24px;
+}
+
+.container {
+    border-radius: 6px;
+    background: white;
+    box-shadow: .5px .5px 10px rgba(170, 163, 163, 0.8);
+}
+
+.hero--image {
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background-size: contain;
+}
+
+.total {}
+
+.content {
+    padding: 30px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero--heading {
+    color: hsl(217, 19%, 35%);
+    line-height: 1.4;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero--info {
+    line-height: 1.5;
+    color: hsl(212, 23%, 69%);
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.profile--image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.profile--info {
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.profile--name {
+    font-weight: bold;
+    color: hsl(217, 19%, 35%);
+}
+
+.profile--date {
+    color: hsl(212, 23%, 69%);
+    margin-top: 2px;
+}
+
+.share--icon__div {
+    background: hsl(210, 46%, 95%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.social--div {
+    display: none;
+}
+
+.social {
+    background: hsl(217, 19%, 35%);
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.social--icons {
+    display: flex;
+}
+
+.share--label {
+    text-transform: uppercase;
+    color: hsl(212, 23%, 69%);
+    letter-spacing: 5.5px;
+}
+
+.social--icon {
+    margin-left: 20px;
+    fill: white;
+}
+
+.share--icon--social {
+    background: hsl(214, 17%, 51%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.share--icon--social svg path {
+    fill: #fff;
+}
+
+@media (min-width: 990px) {
+    main {
+        padding: 175px 150px;
+    }
+    .container {
+        display: flex;
+    }
+    .hero--image {
+        border-top-right-radius: 0px;
+    }
+    .main--image {
+        display: flex;
+        align-self: stretch;
+    }
+    .social--div {
+        display: none;
+    }
+}
